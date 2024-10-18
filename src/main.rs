@@ -11,8 +11,8 @@ fn main() {
 
     let input_text: &String = &args[0];
 
-    let standard_font: figlet_rs::FIGfont = figlet_rs::FIGfont::standard().unwrap();
-    let figure: figlet_rs::FIGure<'_>  = standard_font.convert(input_text).unwrap();
+    let standard_font: figleter::FIGfont = figleter::FIGfont::standard().unwrap();
+    let figure: figleter::FIGure<'_>  = standard_font.convert(input_text).unwrap();
 
     println!("{}", figure);
 }
